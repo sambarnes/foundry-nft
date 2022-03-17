@@ -1,22 +1,21 @@
 <img align="right" width="150" height="150" top="100" src="./assets/readme.jpg">
 
-# femplate • [![tests](https://github.com/abigger87/femplate/actions/workflows/tests.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/tests.yml) [![lints](https://github.com/abigger87/femplate/actions/workflows/lints.yml/badge.svg)](https://github.com/abigger87/femplate/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/abigger87/femplate)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/abigger87/femplate)
+# Foundry NFT • [![tests](https://github.com/sambarnes/foundry-nft/actions/workflows/tests.yml/badge.svg)](https://github.com/sambarnes/foundry-nft/actions/workflows/tests.yml) [![lints](https://github.com/sambarnes/foundry-nft/actions/workflows/lints.yml/badge.svg)](https://github.com/sambarnes/foundry-nft/actions/workflows/lints.yml) ![GitHub](https://img.shields.io/github/license/sambarnes/foundry-nft)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/sambarnes/foundry-nft)
 
+Barebones ERC721 Template for Foundry.
 
-Robust Template for Foundry Projects.
+Wanted to learn Foundry before getting too accustomed to Hardhat. Followed [this tutorial](https://mirror.xyz/juliancanderson.eth/D94omhhrd4wiWkqSWjY55y-jhtVIBLl9ZZoHk1IERPE) & forked the [abigger87/femplate](https://github.com/abigger87/femplate) template.
 
 ## Getting Started
 
-Click `use this template` on [Github](https://github.com/abigger87/femplate) to create a new repository with this repo as the initial state.
+Click `use this template` on [Github](https://github.com/sambarnes/foundry-nft) to create a new repository with this repo as the initial state.
 
 Or, if your repo already exists, run:
 ```sh
-forge init --template https://github.com/abigger87/femplate
+forge init --template https://github.com/sambarnes/foundry-nft
 git submodule update --init --recursive
 forge install
 ```
-
-Run `make rename` to rename all instances of `femplate` with the name of your project/repository.
 
 ## Blueprint
 
@@ -24,12 +23,13 @@ Run `make rename` to rename all instances of `femplate` with the name of your pr
 lib
 ├─ ds-test — https://github.com/dapphub/ds-test
 ├─ forge-std — https://github.com/brockelmore/forge-std
+├─ openzeppelin-contracts — https://github.com/openzeppelin/openzeppelin-contracts
 ├─ solmate — https://github.com/Rari-Capital/solmate
 ├─ clones-with-immutable-args — https://github.com/wighawag/clones-with-immutable-args
 src
 ├─ tests
-│  └─ Greeter.t — "Greeter Tests"
-└─ Greeter — "A Minimal Greeter Contract"
+│  └─ SomeNFT.t — "SomeNFT Tests"
+└─ SomeNFT — "A Minimal ERC721 Contract"
 ```
 
 ## Development
@@ -107,7 +107,7 @@ Install DappTools using their [installation guide](https://github.com/dapphub/da
 
 ## License
 
-[AGPL-3.0-only](https://github.com/abigger87/femplate/blob/master/LICENSE)
+[AGPL-3.0-only](https://github.com/sambarnes/foundry-nft/blob/master/LICENSE)
 
 ## Acknowledgements
 
